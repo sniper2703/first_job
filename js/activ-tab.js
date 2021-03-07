@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.countries-img').forEach(function(Step) {
+  document.querySelectorAll('.countries__img').forEach(function(Step) {
     Step.addEventListener('click', function(event) {
       const path = event.currentTarget.dataset.path
 
-      document.querySelectorAll('.countries-inner').forEach(function(stepDesc) {
-        stepDesc.classList.remove('countries-inner-activ')
+      document.querySelectorAll('.catalog__country').forEach(function(stepDesc) {
+        stepDesc.classList.remove('catalog__country_activ')
       })
-      document.querySelector(`[data-target="${path}"]`).classList.add('countries-inner-activ')
+      document.querySelector(`[data-target="${path}"]`).classList.add('catalog__country_activ')
     })
   })
 
@@ -14,20 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
     Step.addEventListener('click', function(event) {
       const path = event.currentTarget.dataset.path
 
-      document.querySelectorAll('.info-painter').forEach(function(stepDesc) {
-        stepDesc.classList.remove('info-painter-activ')
+      document.querySelectorAll('.painters__info').forEach(function(stepDesc) {
+        stepDesc.classList.remove('painters__info_activ')
       })
-      document.querySelector(`[data-target="${path}"]`).classList.add('info-painter-activ')
+      document.querySelector(`[data-target="${path}"]`).classList.add('painters__info_activ')
     })
   })
 })
 
 var header = document.getElementById("myDIV");
-var btns = header.getElementsByClassName("countries-item");
+var btns = header.getElementsByClassName("countries__item");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("countries-item-activ");
-    current[0].className = current[0].className.replace(" countries-item-activ", "");
-    this.className += " countries-item-activ";
+    var current = document.getElementsByClassName("countries__item_activ");
+    current[0].className = current[0].className.replace(" countries__item_activ", "");
+    this.className += " countries__item_activ";
   });
 }
