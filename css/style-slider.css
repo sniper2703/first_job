@@ -1,4 +1,4 @@
-.gallery-picture {
+.gallery__picture {
   position: relative;
 }
 
@@ -30,7 +30,7 @@
   display: flex;
 }
 /* Слайд */
-.edition-block.slick-slide{
+.editions__block.slick-slide{
   min-width: 0;
   width: 350px;
 }
@@ -44,8 +44,8 @@
 /* Клонированный слайд */
 .slick-slide.slick-cloned{}
 /* Стрелка */
-.slider-arrow .slick-arrow,
-.editions-slider-arrow .slick-arrow{
+.gallery__slider-arrow .slick-arrow,
+.editions__slider-arrow .slick-arrow{
   position: absolute;
   top: 0;
   z-index: 10;
@@ -73,31 +73,28 @@
   cursor: pointer;
 }
 
-.slider-arrow .slick-arrow:focus,
-.editions-slider-arrow .slick-arrow:focus,
-.partners-slider .slick-arrow:focus {
+.gallery__slider-arrow .slick-arrow:not(.slick-arrow.slick-disabled):focus,
+.editions__slider-arrow .slick-arrow:not(.slick-arrow.slick-disabled):focus,
+.partners-slider .slick-arrow:not(.slick-arrow.slick-disabled):focus {
   outline: none;
   border: 2px solid #7943A4;
 }
 
-.slider-arrow .slick-arrow:hover,
-.editions-slider-arrow .slick-arrow:hover,
-.partners-slider .slick-arrow:hover {
+.gallery__slider-arrow .slick-arrow:not(.slick-arrow.slick-disabled):hover,
+.editions__slider-arrow .slick-arrow:not(.slick-arrow.slick-disabled):hover,
+.partners-slider .slick-arrow:not(.slick-arrow.slick-disabled):hover {
   background: #9D5CD0;
 }
 
 /* Стрелка влево */
-.slider-arrow .slick-arrow.slick-prev,
-.editions-slider-arrow .slick-arrow.slick-prev{
+.gallery__slider-arrow .slick-arrow.slick-prev,
+.editions__slider-arrow .slick-arrow.slick-prev,
+.partners-slider .slick-arrow.slick-prev{
   left: 0;
 }
 
-.partners-slider .slick-arrow.slick-prev {
-  left: 0;
-}
-
-.slider-arrow .slick-arrow.slick-prev::before,
-.editions-slider-arrow .slick-arrow.slick-prev::before,
+.gallery__slider-arrow .slick-arrow.slick-prev::before,
+.editions__slider-arrow .slick-arrow.slick-prev::before,
 .partners-slider .slick-arrow.slick-prev::before {
   content: "";
   background-image: url(../img/arrow-left.svg);
@@ -117,8 +114,8 @@
 }
 
 /* Стрелка вправо */
-.slider-arrow .slick-arrow.slick-next,
-.editions-slider-arrow .slick-arrow.slick-next{
+.gallery__slider-arrow .slick-arrow.slick-next,
+.editions__slider-arrow .slick-arrow.slick-next{
   left: 100px;
 }
 
@@ -126,8 +123,8 @@
   right: -80px;
 }
 
-.slider-arrow .slick-arrow.slick-next::before,
-.editions-slider-arrow .slick-arrow.slick-next::before,
+.gallery__slider-arrow .slick-arrow.slick-next::before,
+.editions__slider-arrow .slick-arrow.slick-next::before,
 .partners-slider .slick-arrow.slick-next::before {
   content: "";
   background-image: url(../img/arrow-right.svg);
@@ -149,8 +146,8 @@
 
 
 /* Стрелка не активная */
-.slider-arrow .slick-arrow.slick-disabled,
-.editions-slider-arrow .slick-arrow.slick-disabled,
+.gallery__slider-arrow .slick-arrow.slick-disabled,
+.editions__slider-arrow .slick-arrow.slick-disabled,
 .partners-slider .slick-arrow.slick-disabled{
   opacity: .2;
   cursor: default;
@@ -172,13 +169,13 @@
   justify-content: space-between;
 }
 
-.gallery-img{
+.gallery__img{
   width: 350px;
   margin-bottom: 50px;
 }
 
 .counter,
-.editions-counter {
+.editions__counter {
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
