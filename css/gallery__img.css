@@ -1,5 +1,5 @@
 /* увеличенная картинка */
-#magnify {
+.magnify {
   display: none;
   /* position: absolute; upd: 24.10.2016 */
   position: fixed;
@@ -7,11 +7,11 @@
   height: auto;
   z-index: 9999;
 }
-#magnify img {
+.magnify img {
   width: 100%;
 }
 /* затемняющий фон */
-#overlay {
+.overlay {
   display: none;
   background: #000;
   position: fixed;
@@ -23,7 +23,7 @@
   z-index: 9990;
 }
 /* кнопка закрытия */
-#close-popup {
+.close-popup {
   width: 30px;
   height: 30px;
   background: #FFFFFF;
@@ -34,7 +34,7 @@
   top: 15px;
   right: 15px;
 }
-#close-popup i {
+.close-popup i {
   width: 30px;
   height: 30px;
   background: url(https://codernote.ru/files/cross.png) no-repeat center center;
@@ -44,7 +44,7 @@
 @keyframes rota {
  25% { transform: rotate(360deg); }
 }
-#close-popup:hover {
+.close-popup:hover {
   animation: rota 4s infinite normal;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;

@@ -1,0 +1,299 @@
+@media (max-width: 1439px) {
+  .container {
+    max-width: 955px;
+  }
+
+  .header__burger {
+    display: block;
+    padding: 0;
+    transition: 0.5s;
+    
+  }
+  
+  .header__nav {
+    position: absolute;
+    transition: 0.5s;
+    transform: translateX(-100%);
+  }
+
+  .header__nav_active {
+    transform: translateX(-90px);
+  }
+
+  .header__nav__item_1024 {
+    display: block;
+  }
+
+  .header__nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    width: 200px;
+    background-color: #000;
+  }
+
+  .header__nav__item {
+    margin-bottom: 20px;
+  }
+
+  .header__login {
+    display: none;
+  }
+
+  .header__botton {
+    display: none;
+  }
+
+  .header__img-logo {
+    width: 188px;
+    height: 37px;
+  }
+
+  .search1024 {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+  }
+
+  .hero__inner {
+    padding-top: 111px;
+  }
+
+  .hero__desc {
+    margin-top: 0;
+    max-width: 655px;
+    margin-bottom: 140px;
+  }
+
+  .hero__btn {
+    margin-bottom: 118px;
+  }
+
+  .gallery__inner {
+    padding: 80px 0 72px;
+  }
+
+  .gallery__info__desc {
+    margin-bottom: -2px;
+  }
+
+  .slick-slider{
+    padding-left: 34px;
+    max-width: 630px;
+    min-width: 0;
+  }
+
+  .counter {
+    padding-left: 86px;
+  }
+
+  .gallery__slider-arrow .slick-arrow.slick-prev {
+    left: 34px;
+  }
+
+  .gallery__slider-arrow .slick-arrow.slick-next {
+    left: 134px;
+  }
+
+  .gallery__img{
+    width: 280px;
+    margin-bottom: 6px;
+  }
+
+  .painters__img {
+    max-width: 438px;
+  }
+
+  .accordion__inner {
+    height: 440px;
+  }
+
+  .accordion__list {
+    height: 385px;
+  }
+
+  .event {
+    max-width: 288px;
+  }
+
+  .events__inner {
+    padding: 87px 0px 81px;
+  }
+
+  .event__img {
+    max-width: 288px;
+    height: 198px;
+  }
+
+  .event__info {
+    padding: 13px 19px 139px 34px;
+  }
+
+  .editions__img {
+    width: 280px;
+  }
+
+  .projects__info__desc1 {
+    top: 200px;
+    left: 495px;
+  }
+
+  .projects__info__desc2 {
+    top: 250px;
+    left: 403px;
+  }
+
+  .projects__info__desc3 {
+    top: 316px;
+    left: 0px;
+  }
+
+  .partners-slider.slick-slider {
+    padding-left: 20px;
+  }
+
+  .partners-block {
+    width: 484px;
+  }
+
+  .img-partner {
+    max-width: 384px;
+  }
+
+  .partners-slider .slick-arrow.slick-next {
+    right: 1px;
+  }
+
+  .contacts__icon {
+    width: 58px;
+    height: 58px;
+  }
+
+  .icon-whatsapp {
+    margin-right: 28px;
+  }
+
+  .contacts__info {
+    padding: 108px 122px 103px 0;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer__logo-link {
+    padding-top: 10px;
+  }
+
+  .footer__link-block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 240px;
+  }
+
+  .footer__link {
+    width: 60px;
+    height: 60px;
+  }
+}  
+
+@media (max-width: 945px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .gallery__inner {
+    flex-direction: column;
+  }
+
+  .gallery__filter {
+    margin-bottom: 100px;
+  }
+
+  .gallery__info__desc {
+    display: none;
+  }
+
+  .gallery__info__desc_768 {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+  }
+
+  .slick-slider {
+    max-width: 670px;
+    padding-left: 0;
+  }
+
+  .painters {
+    flex-direction: column-reverse;
+  }
+
+  .painters__info {
+    padding-bottom: 0;
+  }
+
+  .chronology {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .painters__img {
+    max-width: 100%;
+  }
+
+  .hidden-event3 {
+    display: none;
+    margin-top: 50px;
+  }
+
+  .editions__inner {
+    flex-direction: column;
+  }
+
+  .categories-list {
+    flex-wrap: wrap;
+    height: 125px;
+    align-content: space-between;
+  }
+
+  .lable-check {
+    margin-right: 15px;
+  }
+
+  .projects__info__desc1 {
+    top: 260px;
+    left: 163px;
+  }
+
+  .projects__info__desc2 {
+    top: 345px;
+    left: 77px;
+  }
+
+  .projects__info__desc3 {
+    top: 411px;
+    left: 0px;
+  }
+
+  .partners-block {
+    max-width: 312px;
+  }
+
+  .partners-slider.slick-slider {
+    padding-left: 20px;
+    max-width: 650px;
+  }
+
+  .img-partner {
+    max-width: 264px;
+  }
+}
