@@ -5,19 +5,43 @@ $(document).ready(function(){
     rows:2,
     slidesPerRow:3,
     appendArrows:$('.gallery__slider-arrow'),
+    responsive: [
+      {
+        breakpoint: 1439,
+        settings: {
+          slidesPerRow: 2,
+        }
+      },
+    ]
   });
 
   $('.editions__slider').slick({
     infinite:false,
     waitForAnimate:false,
-    slidesToShow:3,
+    slidesToShow: 3,
     appendArrows:$('.editions__slider-arrow'),
+    responsive: [
+      {
+        breakpoint: 1439,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+    ]
   });
 
   $('.partners-slider').slick({
     infinite:false,
     waitForAnimate:false,
     slidesToShow:3,
+    responsive: [
+      {
+        breakpoint: 1439,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+    ]
   });
 
   $('.gallery__.slider').on(`init reInit`, function(event, slick) {
